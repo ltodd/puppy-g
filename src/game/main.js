@@ -6,6 +6,8 @@
  *
  */
 
+
+var gesturesEngine;
 var state = {
     init: function() {
         // Delete this init block or replace with your own logic.
@@ -18,19 +20,19 @@ var state = {
 
     },
     preload: function() {
-        // STate preload logic goes here
+        gesturesEngine = new GesturesEngine(game,100,5);
     },
     create: function(){
-      // State create logic goes here
+        gesturesEngine.setCanvas(game.add.graphics(0,0));
     },
     update: function() {
-        // State Update Logic goes here.
+        gesturesEngine.update(game);
     }
 };
 
 var game = new Phaser.Game(
-    800,
-    480,
+    window.screen.availWidth * window.devicePixelRatio,
+    window.screen.availHeight * window.devicePixelRatio,
     Phaser.AUTO,
     'game',
     state
