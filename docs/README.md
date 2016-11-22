@@ -24,7 +24,6 @@ Table of Contents
 
 
 - [Design History](#design-history)
-  - [Version 1.0](#version-10)
 - [Game Overview](#game-overview)
   - [Philosophy](#philosophy)
     - [Something fresh](#something-fresh)
@@ -62,6 +61,10 @@ Table of Contents
     - [Tilemapping](#tilemapping)
 - [The World Layout](#the-world-layout)
   - [Overview](#overview-3)
+- [Controls](#controls)
+  - [World](#world)
+  - [Menu](#menu)
+  - [Battle](#battle)
 - [Game Characters](#game-characters)
   - [Main Character](#main-character)
   - [Enemies and Monsters](#enemies-and-monsters)
@@ -102,6 +105,11 @@ Version 1.0 is the skeleton for the Game Design Document (GDD).
 1.  Initial layout of the GDD. It will grow over time.
 
 2.  Creating areas to put final design decisions.
+
+Version 1.1
+-----------
+
+1.  Added section for controls.
 
 Game Overview
 =============
@@ -320,6 +328,26 @@ Overview
 --------
 
 TBD with screenshots.
+
+Controls
+========
+Since this is a mobile game, the controls will need to be based heavily on gestures.
+
+World
+-----
+How will the player mover around the world?
+* Tap to move to location?
+* Press and hold edges of screen to move?
+* Simulate a joystick?
+* Swipe to move?
+
+Menu
+----
+Standard click to select, swipe to scroll.
+
+Battle
+------
+Will the battle sequences be gesture based?
 
 Game Characters
 ===============
